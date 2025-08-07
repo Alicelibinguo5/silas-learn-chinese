@@ -1,0 +1,28 @@
+# Xcode
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+*.xcuserstate
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build artifacts
+build/
+DerivedData/
+
+# User-specific files
+*.xcuserdata/
+*.xcuserdatad/
+
+# Swift Package Manager
+Package.resolved
