@@ -11,7 +11,7 @@ struct ContentView: View {
             
             // Main content
             VStack(spacing: 0) {
-                // Header with floating elements
+                // Header with floating elements and magical icon
                 HeaderView()
                 
                 // Tab navigation
@@ -139,16 +139,25 @@ struct HeaderView: View {
     
     var body: some View {
         VStack(spacing: 15) {
-            // App title with magical glow
-            VStack(spacing: 8) {
-                Text("小恐龙学中文")
-                    .font(.system(size: 32, weight: .bold, design: .rounded))
-                    .foregroundColor(Color(red: 0.2, green: 0.4, blue: 0.3))
-                    .shadow(color: Color(red: 0.2, green: 0.4, blue: 0.3).opacity(0.3), radius: isGlowing ? 8 : 4)
+            // Magical app icon and title
+            HStack(spacing: 15) {
+                // Magical app icon (smaller version)
+                MagicalAppIcon()
+                    .scaleEffect(0.3)
+                    .frame(width: 36, height: 36)
+                    .clipped()
                 
-                Text("Silas Learns Chinese")
-                    .font(.system(size: 18, weight: .medium, design: .rounded))
-                    .foregroundColor(Color(red: 0.3, green: 0.5, blue: 0.4))
+                // App title with magical glow
+                VStack(spacing: 8) {
+                    Text("小恐龙学中文")
+                        .font(.system(size: 28, weight: .bold, design: .rounded))
+                        .foregroundColor(Color(red: 0.2, green: 0.4, blue: 0.3))
+                        .shadow(color: Color(red: 0.2, green: 0.4, blue: 0.3).opacity(0.3), radius: isGlowing ? 8 : 4)
+                    
+                    Text("Silas Learns Chinese")
+                        .font(.system(size: 16, weight: .medium, design: .rounded))
+                        .foregroundColor(Color(red: 0.3, green: 0.5, blue: 0.4))
+                }
             }
             .padding(.top, 20)
             

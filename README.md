@@ -69,6 +69,13 @@ SilasLearnsChinese/
 - Natural color palette (greens, blues, earth tones)
 - Hand-drawn aesthetic with digital polish
 
+### Magical App Icon ✨
+- **Totoro-inspired character** with gentle, friendly appearance
+- **Chinese character (中)** representing learning Chinese
+- **Spirited Away gradient magic** with mystical forest colors
+- **Animated sparkles** and floating magical elements
+- **Perfect iOS integration** with all required sizes (20pt to 1024pt)
+
 ### Dinosaur Theme
 - Friendly, cartoon-style dinosaurs
 - Prehistoric landscapes with modern accessibility

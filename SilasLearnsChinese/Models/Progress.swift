@@ -82,6 +82,65 @@ enum MilestoneType: String, CaseIterable, Codable {
     }
 }
 
+/// Type of learning session
+/// 
+/// This enum categorizes different types of learning activities
+/// to help track and analyze learning patterns.
+enum LearningSessionType: String, Codable, CaseIterable {
+    case vocabulary = "vocabulary"
+    case pronunciation = "pronunciation"
+    case writing = "writing"
+    case listening = "listening"
+    case games = "games"
+    case review = "review"
+    case quiz = "quiz"
+    case freePlay = "free_play"
+    
+    /// Localized display name for the session type
+    var displayName: String {
+        switch self {
+        case .vocabulary:
+            return "Vocabulary Practice"
+        case .pronunciation:
+            return "Pronunciation Practice"
+        case .writing:
+            return "Writing Practice"
+        case .listening:
+            return "Listening Practice"
+        case .games:
+            return "Learning Games"
+        case .review:
+            return "Review Session"
+        case .quiz:
+            return "Quiz"
+        case .freePlay:
+            return "Free Play"
+        }
+    }
+    
+    /// Chinese translation of the session type
+    var chineseName: String {
+        switch self {
+        case .vocabulary:
+            return "词汇练习"
+        case .pronunciation:
+            return "发音练习"
+        case .writing:
+            return "写字练习"
+        case .listening:
+            return "听力练习"
+        case .games:
+            return "学习游戏"
+        case .review:
+            return "复习"
+        case .quiz:
+            return "测验"
+        case .freePlay:
+            return "自由学习"
+        }
+    }
+}
+
 /// Represents a learning session with results
 /// 
 /// This model tracks individual learning sessions including

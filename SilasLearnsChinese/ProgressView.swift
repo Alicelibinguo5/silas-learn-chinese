@@ -1,5 +1,40 @@
 import SwiftUI
 
+// MARK: - StatCard View
+struct StatCard: View {
+    let title: String
+    let value: String
+    let icon: String
+    let color: Color
+    
+    var body: some View {
+        RoundedRectangle(cornerRadius: 15)
+            .fill(color.opacity(0.1))
+            .overlay(
+                RoundedRectangle(cornerRadius: 15)
+                    .stroke(color.opacity(0.3), lineWidth: 1)
+            )
+            .frame(height: 100)
+            .overlay(
+                VStack(spacing: 8) {
+                    Image(systemName: icon)
+                        .font(.title2)
+                        .foregroundColor(color)
+                    
+                    Text(value)
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .foregroundColor(.primary)
+                    
+                    Text(title)
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                        .multilineTextAlignment(.center)
+                }
+            )
+    }
+}
+
 /// Progress view for tracking learning achievements
 /// 
 /// This view displays learning progress, achievements, and statistics
@@ -28,28 +63,28 @@ struct ProgressView: View {
             VStack(spacing: 30) {
                 // Stats cards
                 LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2), spacing: 20) {
-                    StatCardView(
+                    StatCard(
                         title: "Words Learned",
                         value: "\(progressManager.totalWordsLearned())",
                         icon: "book.fill",
                         color: .blue
                     )
                     
-                    StatCardView(
+                    StatCard(
                         title: "Sessions",
                         value: "\(progressManager.totalSessions())",
                         icon: "play.fill",
                         color: .green
                     )
                     
-                    StatCardView(
+                    StatCard(
                         title: "Average Score",
                         value: "\(Int(progressManager.averageScore()))%",
                         icon: "star.fill",
                         color: .orange
                     )
                     
-                    StatCardView(
+                    StatCard(
                         title: "Streak",
                         value: "\(progressManager.currentStreak) days",
                         icon: "flame.fill",

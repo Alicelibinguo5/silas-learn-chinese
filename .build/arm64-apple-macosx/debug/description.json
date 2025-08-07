@@ -1,10 +1,6 @@
 {
   "builtTestProducts" : [
-    {
-      "binaryPath" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.xctest/Contents/MacOS/SilasLearnsChinesePackageTests",
-      "packagePath" : "/Users/aliceguo/src/silaslearn-Chinese",
-      "productName" : "SilasLearnsChinesePackageTests"
-    }
+
   ],
   "copyCommands" : {
 
@@ -71,7 +67,7 @@
           "name" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/sources"
         }
       ],
-      "isLibrary" : true,
+      "isLibrary" : false,
       "moduleName" : "SilasLearnsChinese",
       "moduleOutputPath" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/Modules/SilasLearnsChinese.swiftmodule",
       "objects" : [
@@ -87,7 +83,7 @@
       ],
       "otherArguments" : [
         "-target",
-        "arm64-apple-macosx10.13",
+        "arm64-apple-macosx11.0",
         "-enable-batch-mode",
         "-index-store-path",
         "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/index/store",
@@ -99,10 +95,10 @@
         "-module-cache-path",
         "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/ModuleCache",
         "-parseable-output",
-        "-parse-as-library",
-        "-emit-objc-header",
-        "-emit-objc-header-path",
-        "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/SilasLearnsChinese-Swift.h",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "SilasLearnsChinese_main",
         "-color-diagnostics",
         "-swift-version",
         "5",
@@ -187,183 +183,6 @@
       ],
       "tempsPath" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build",
       "wholeModuleOptimization" : false
-    },
-    "C.SilasLearnsChinesePackageTests-arm64-apple-macosx15.0-debug.module" : {
-      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
-      "fileList" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.build/sources",
-      "importPath" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/Modules",
-      "inputs" : [
-        {
-          "kind" : "file",
-          "name" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.derived/runner.swift"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/Modules/SilasLearnsChineseTests.swiftmodule"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.build/sources"
-        }
-      ],
-      "isLibrary" : true,
-      "moduleName" : "SilasLearnsChinesePackageTests",
-      "moduleOutputPath" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/Modules/SilasLearnsChinesePackageTests.swiftmodule",
-      "objects" : [
-        "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.build/runner.swift.o"
-      ],
-      "otherArguments" : [
-        "-target",
-        "arm64-apple-macosx10.13",
-        "-enable-batch-mode",
-        "-index-store-path",
-        "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/index/store",
-        "-Onone",
-        "-enable-testing",
-        "-j10",
-        "-DSWIFT_PACKAGE",
-        "-DDEBUG",
-        "-module-cache-path",
-        "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/ModuleCache",
-        "-parseable-output",
-        "-parse-as-library",
-        "-emit-objc-header",
-        "-emit-objc-header-path",
-        "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.build/SilasLearnsChinesePackageTests-Swift.h",
-        "-color-diagnostics",
-        "-sdk",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
-        "-F",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-        "-I",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
-        "-L",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
-        "-g",
-        "-Xcc",
-        "-isysroot",
-        "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
-        "-Xcc",
-        "-F",
-        "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-        "-Xcc",
-        "-fPIC",
-        "-Xcc",
-        "-g",
-        "-package-name",
-        "silaslearn_chinese"
-      ],
-      "outputFileMapPath" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.build/output-file-map.json",
-      "outputs" : [
-        {
-          "kind" : "file",
-          "name" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.build/runner.swift.o"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/Modules/SilasLearnsChinesePackageTests.swiftmodule"
-        }
-      ],
-      "prepareForIndexing" : false,
-      "sources" : [
-        "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.derived/runner.swift"
-      ],
-      "tempsPath" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.build",
-      "wholeModuleOptimization" : false
-    },
-    "C.SilasLearnsChineseTests-arm64-apple-macosx15.0-debug.module" : {
-      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
-      "fileList" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChineseTests.build/sources",
-      "importPath" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/Modules",
-      "inputs" : [
-        {
-          "kind" : "file",
-          "name" : "/Users/aliceguo/src/silaslearn-Chinese/Tests/SilasLearnsChineseTests.swift"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/Modules/SilasLearnsChinese.swiftmodule"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChineseTests.build/sources"
-        }
-      ],
-      "isLibrary" : true,
-      "moduleName" : "SilasLearnsChineseTests",
-      "moduleOutputPath" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/Modules/SilasLearnsChineseTests.swiftmodule",
-      "objects" : [
-        "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChineseTests.build/SilasLearnsChineseTests.swift.o"
-      ],
-      "otherArguments" : [
-        "-target",
-        "arm64-apple-macosx13.0",
-        "-enable-batch-mode",
-        "-index-store-path",
-        "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/index/store",
-        "-Onone",
-        "-enable-testing",
-        "-j10",
-        "-DSWIFT_PACKAGE",
-        "-DDEBUG",
-        "-module-cache-path",
-        "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/ModuleCache",
-        "-parseable-output",
-        "-parse-as-library",
-        "-color-diagnostics",
-        "-swift-version",
-        "5",
-        "-sdk",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
-        "-F",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-        "-I",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
-        "-L",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
-        "-g",
-        "-Xcc",
-        "-isysroot",
-        "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
-        "-Xcc",
-        "-F",
-        "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-        "-Xcc",
-        "-fPIC",
-        "-Xcc",
-        "-g",
-        "-package-name",
-        "silaslearn_chinese"
-      ],
-      "outputFileMapPath" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChineseTests.build/output-file-map.json",
-      "outputs" : [
-        {
-          "kind" : "file",
-          "name" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChineseTests.build/SilasLearnsChineseTests.swift.o"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/Modules/SilasLearnsChineseTests.swiftmodule"
-        }
-      ],
-      "prepareForIndexing" : false,
-      "sources" : [
-        "/Users/aliceguo/src/silaslearn-Chinese/Tests/SilasLearnsChineseTests.swift"
-      ],
-      "tempsPath" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChineseTests.build",
-      "wholeModuleOptimization" : false
     }
   },
   "swiftFrontendCommands" : {
@@ -390,7 +209,7 @@
       "-I",
       "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/Modules",
       "-target",
-      "arm64-apple-macosx10.13",
+      "arm64-apple-macosx11.0",
       "-enable-batch-mode",
       "-index-store-path",
       "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/index/store",
@@ -402,119 +221,10 @@
       "-module-cache-path",
       "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/ModuleCache",
       "-parseable-output",
-      "-parse-as-library",
-      "-emit-objc-header",
-      "-emit-objc-header-path",
-      "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/SilasLearnsChinese-Swift.h",
-      "-color-diagnostics",
-      "-swift-version",
-      "5",
-      "-sdk",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
-      "-F",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-      "-I",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
-      "-L",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
-      "-g",
-      "-Xcc",
-      "-isysroot",
-      "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
-      "-Xcc",
-      "-F",
-      "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-      "-Xcc",
-      "-fPIC",
-      "-Xcc",
-      "-g",
-      "-package-name",
-      "silaslearn_chinese",
-      "-driver-use-frontend-path",
-      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
-    ],
-    "SilasLearnsChinesePackageTests" : [
-      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
-      "-module-name",
-      "SilasLearnsChinesePackageTests",
-      "-package-name",
-      "silaslearn_chinese",
-      "-incremental",
-      "-c",
-      "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.derived/runner.swift",
-      "-I",
-      "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/Modules",
-      "-target",
-      "arm64-apple-macosx10.13",
-      "-enable-batch-mode",
-      "-index-store-path",
-      "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/index/store",
-      "-Onone",
-      "-enable-testing",
-      "-j10",
-      "-DSWIFT_PACKAGE",
-      "-DDEBUG",
-      "-module-cache-path",
-      "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/ModuleCache",
-      "-parseable-output",
-      "-parse-as-library",
-      "-emit-objc-header",
-      "-emit-objc-header-path",
-      "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.build/SilasLearnsChinesePackageTests-Swift.h",
-      "-color-diagnostics",
-      "-sdk",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
-      "-F",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-      "-I",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
-      "-L",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
-      "-g",
-      "-Xcc",
-      "-isysroot",
-      "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
-      "-Xcc",
-      "-F",
-      "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-      "-Xcc",
-      "-fPIC",
-      "-Xcc",
-      "-g",
-      "-package-name",
-      "silaslearn_chinese",
-      "-driver-use-frontend-path",
-      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
-    ],
-    "SilasLearnsChineseTests" : [
-      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
-      "-module-name",
-      "SilasLearnsChineseTests",
-      "-package-name",
-      "silaslearn_chinese",
-      "-incremental",
-      "-c",
-      "/Users/aliceguo/src/silaslearn-Chinese/Tests/SilasLearnsChineseTests.swift",
-      "-I",
-      "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/Modules",
-      "-target",
-      "arm64-apple-macosx13.0",
-      "-enable-batch-mode",
-      "-index-store-path",
-      "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/index/store",
-      "-Onone",
-      "-enable-testing",
-      "-j10",
-      "-DSWIFT_PACKAGE",
-      "-DDEBUG",
-      "-module-cache-path",
-      "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/ModuleCache",
-      "-parseable-output",
-      "-parse-as-library",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "SilasLearnsChinese_main",
       "-color-diagnostics",
       "-swift-version",
       "5",
@@ -548,32 +258,29 @@
   "targetDependencyMap" : {
     "SilasLearnsChinese" : [
 
-    ],
-    "SilasLearnsChinesePackageTests" : [
-      "SilasLearnsChineseTests",
-      "SilasLearnsChinese"
-    ],
-    "SilasLearnsChineseTests" : [
-      "SilasLearnsChinese"
     ]
   },
   "testDiscoveryCommands" : {
 
   },
   "testEntryPointCommands" : {
-    "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.derived/runner.swift" : {
-      "inputs" : [
 
-      ],
-      "outputs" : [
-        {
-          "kind" : "file",
-          "name" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.derived/runner.swift"
-        }
-      ]
-    }
   },
   "writeCommands" : {
+    "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese-entitlement.plist"
+    },
     "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/sources" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
@@ -620,21 +327,7 @@
       ],
       "outputFilePath" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/sources"
     },
-    "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.build/sources" : {
-      "alwaysOutOfDate" : false,
-      "inputs" : [
-        {
-          "kind" : "virtual",
-          "name" : "<sources-file-list>"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.derived/runner.swift"
-        }
-      ],
-      "outputFilePath" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.build/sources"
-    },
-    "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.product/Objects.LinkFileList" : {
+    "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.product/Objects.LinkFileList" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -676,31 +369,9 @@
         {
           "kind" : "file",
           "name" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/Vocabulary.swift.o"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.build/runner.swift.o"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChineseTests.build/SilasLearnsChineseTests.swift.o"
         }
       ],
-      "outputFilePath" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.product/Objects.LinkFileList"
-    },
-    "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChineseTests.build/sources" : {
-      "alwaysOutOfDate" : false,
-      "inputs" : [
-        {
-          "kind" : "virtual",
-          "name" : "<sources-file-list>"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/aliceguo/src/silaslearn-Chinese/Tests/SilasLearnsChineseTests.swift"
-        }
-      ],
-      "outputFilePath" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChineseTests.build/sources"
+      "outputFilePath" : "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.product/Objects.LinkFileList"
     },
     "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
       "alwaysOutOfDate" : true,
