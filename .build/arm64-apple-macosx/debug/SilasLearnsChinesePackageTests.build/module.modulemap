@@ -1,0 +1,4 @@
+module SilasLearnsChinesePackageTests {
+    header "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.build/SilasLearnsChinesePackageTests-Swift.h"
+    requires objc
+}

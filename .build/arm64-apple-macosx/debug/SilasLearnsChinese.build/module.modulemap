@@ -1,0 +1,4 @@
+module SilasLearnsChinese {
+    header "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/SilasLearnsChinese-Swift.h"
+    requires objc
+}

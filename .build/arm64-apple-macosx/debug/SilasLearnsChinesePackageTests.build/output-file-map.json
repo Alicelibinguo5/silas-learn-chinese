@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.build/master.swiftdeps"
+  },
+  "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.derived/runner.swift": {
+    "dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.build/runner.d",
+    "object": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinesePackageTests.build/runner.swiftdeps"
+  }
+}

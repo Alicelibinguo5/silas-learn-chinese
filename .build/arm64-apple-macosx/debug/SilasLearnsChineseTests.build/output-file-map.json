@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChineseTests.build/master.swiftdeps"
+  },
+  "/Users/aliceguo/src/silaslearn-Chinese/Tests/SilasLearnsChineseTests.swift": {
+    "dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChineseTests.build/SilasLearnsChineseTests.d",
+    "object": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChineseTests.build/SilasLearnsChineseTests.swift.o",
+    "swiftmodule": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChineseTests.build/SilasLearnsChineseTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChineseTests.build/SilasLearnsChineseTests.swiftdeps"
+  }
+}

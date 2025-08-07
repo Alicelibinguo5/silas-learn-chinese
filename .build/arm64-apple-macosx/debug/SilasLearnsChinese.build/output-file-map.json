@@ -1,0 +1,59 @@
+{
+  "": {
+    "swift-dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/master.swiftdeps"
+  },
+  "/Users/aliceguo/src/silaslearn-Chinese/SilasLearnsChinese/ContentView.swift": {
+    "dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/ContentView.d",
+    "object": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/ContentView.swift.o",
+    "swiftmodule": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/ContentView.swiftdeps"
+  },
+  "/Users/aliceguo/src/silaslearn-Chinese/SilasLearnsChinese/Models/Character.swift": {
+    "dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/Character.d",
+    "object": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/Character.swift.o",
+    "swiftmodule": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/Character~partial.swiftmodule",
+    "swift-dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/Character.swiftdeps"
+  },
+  "/Users/aliceguo/src/silaslearn-Chinese/SilasLearnsChinese/Models/Progress.swift": {
+    "dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/Progress.d",
+    "object": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/Progress.swift.o",
+    "swiftmodule": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/Progress~partial.swiftmodule",
+    "swift-dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/Progress.swiftdeps"
+  },
+  "/Users/aliceguo/src/silaslearn-Chinese/SilasLearnsChinese/Models/Vocabulary.swift": {
+    "dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/Vocabulary.d",
+    "object": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/Vocabulary.swift.o",
+    "swiftmodule": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/Vocabulary~partial.swiftmodule",
+    "swift-dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/Vocabulary.swiftdeps"
+  },
+  "/Users/aliceguo/src/silaslearn-Chinese/SilasLearnsChinese/ProgressView.swift": {
+    "dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/ProgressView.d",
+    "object": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/ProgressView.swift.o",
+    "swiftmodule": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/ProgressView~partial.swiftmodule",
+    "swift-dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/ProgressView.swiftdeps"
+  },
+  "/Users/aliceguo/src/silaslearn-Chinese/SilasLearnsChinese/Services/AudioService.swift": {
+    "dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/AudioService.d",
+    "object": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/AudioService.swift.o",
+    "swiftmodule": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/AudioService~partial.swiftmodule",
+    "swift-dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/AudioService.swiftdeps"
+  },
+  "/Users/aliceguo/src/silaslearn-Chinese/SilasLearnsChinese/SilasLearnsChineseApp.swift": {
+    "dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/SilasLearnsChineseApp.d",
+    "object": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/SilasLearnsChineseApp.swift.o",
+    "swiftmodule": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/SilasLearnsChineseApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/SilasLearnsChineseApp.swiftdeps"
+  },
+  "/Users/aliceguo/src/silaslearn-Chinese/SilasLearnsChinese/Views/ActivityView.swift": {
+    "dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/ActivityView.d",
+    "object": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/ActivityView.swift.o",
+    "swiftmodule": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/ActivityView~partial.swiftmodule",
+    "swift-dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/ActivityView.swiftdeps"
+  },
+  "/Users/aliceguo/src/silaslearn-Chinese/SilasLearnsChinese/Views/LearningView.swift": {
+    "dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/LearningView.d",
+    "object": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/LearningView.swift.o",
+    "swiftmodule": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/LearningView~partial.swiftmodule",
+    "swift-dependencies": "/Users/aliceguo/src/silaslearn-Chinese/.build/arm64-apple-macosx/debug/SilasLearnsChinese.build/LearningView.swiftdeps"
+  }
+}
