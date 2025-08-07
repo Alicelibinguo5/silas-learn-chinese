@@ -8,30 +8,28 @@ struct MagicalAppIcon: View {
     
     var body: some View {
         ZStack {
-            // Magical gradient background inspired by Spirited Away
-            RadialGradient(
+            // Simple clean gradient background
+            LinearGradient(
                 gradient: Gradient(colors: [
-                    Color(red: 0.4, green: 0.8, blue: 0.6),  // Magical green
-                    Color(red: 0.2, green: 0.6, blue: 0.8),  // Spirit blue
-                    Color(red: 0.1, green: 0.4, blue: 0.7)   // Deep mystical blue
+                    Color(red: 0.39, green: 0.71, blue: 0.47),  // Soft forest green
+                    Color(red: 0.55, green: 0.78, blue: 0.94)   // Soft sky blue
                 ]),
-                center: .center,
-                startRadius: 20,
-                endRadius: 150
+                startPoint: .top,
+                endPoint: .bottom
             )
             
-            // Floating magical elements
-            ForEach(0..<8, id: \.self) { index in
+            // Simple floating sparkles
+            ForEach(0..<4, id: \.self) { index in
                 MagicalSparkle()
                     .offset(
-                        x: CGFloat.random(in: -60...60),
-                        y: CGFloat.random(in: -60...60)
+                        x: CGFloat.random(in: -40...40),
+                        y: CGFloat.random(in: -40...40)
                     )
                     .opacity(sparkleOpacity)
                     .animation(
                         .easeInOut(duration: 2.0)
                         .repeatForever(autoreverses: true)
-                        .delay(Double(index) * 0.3),
+                        .delay(Double(index) * 0.5),
                         value: sparkleOpacity
                     )
             }
@@ -44,20 +42,12 @@ struct MagicalAppIcon: View {
                     value: isAnimating
                 )
             
-            // Chinese character (中) with magical glow
-            VStack {
-                Text("中")
-                    .font(.system(size: 40, weight: .bold, design: .default))
-                    .foregroundColor(.white)
-                    .shadow(color: .yellow, radius: 8, x: 0, y: 0)
-                    .shadow(color: .orange, radius: 4, x: 0, y: 0)
-                
-                Text("学")
-                    .font(.system(size: 24, weight: .medium))
-                    .foregroundColor(.white)
-                    .opacity(0.9)
-            }
-            .offset(x: 25, y: -10)
+            // Simple Chinese character (中)
+            Text("中")
+                .font(.system(size: 36, weight: .bold, design: .default))
+                .foregroundColor(Color(red: 1.0, green: 0.84, blue: 0.0))  // Simple gold
+                .shadow(color: .black, radius: 2, x: 1, y: 1)  // Simple shadow
+                .offset(x: 25, y: 0)
             
             // Magical border with Spirited Away-inspired elements
             RoundedRectangle(cornerRadius: 25)
@@ -84,54 +74,132 @@ struct MagicalAppIcon: View {
     }
 }
 
-/// Totoro-inspired character for the app icon
+/// Enhanced Totoro-inspired character for the app icon
 struct TotoroCharacter: View {
+    @State private var eyeBlink = false
+    
     var body: some View {
         ZStack {
-            // Main body
+            // Body shadow for depth
             Ellipse()
-                .fill(Color(red: 0.5, green: 0.5, blue: 0.6))
+                .fill(Color(red: 0.27, green: 0.35, blue: 0.45))
+                .frame(width: 52, height: 67)
+                .offset(x: 2, y: 7)
+            
+            // Main body (enhanced)
+            Ellipse()
+                .fill(Color(red: 0.37, green: 0.45, blue: 0.55))
                 .frame(width: 50, height: 65)
             
-            // Belly
+            // Belly with pattern
             Ellipse()
-                .fill(Color(red: 0.8, green: 0.85, blue: 0.9))
+                .fill(Color(red: 0.86, green: 0.92, blue: 0.96))
                 .frame(width: 35, height: 45)
                 .offset(y: 8)
             
-            // Ears
-            HStack(spacing: 30) {
+            // Belly chevron patterns (like real Totoro)
+            VStack(spacing: 4) {
                 Ellipse()
-                    .fill(Color(red: 0.4, green: 0.4, blue: 0.5))
-                    .frame(width: 15, height: 20)
-                    .rotationEffect(.degrees(-15))
-                
+                    .fill(Color(red: 0.78, green: 0.84, blue: 0.88))
+                    .frame(width: 28, height: 4)
                 Ellipse()
-                    .fill(Color(red: 0.4, green: 0.4, blue: 0.5))
-                    .frame(width: 15, height: 20)
-                    .rotationEffect(.degrees(15))
+                    .fill(Color(red: 0.78, green: 0.84, blue: 0.88))
+                    .frame(width: 24, height: 4)
+                Ellipse()
+                    .fill(Color(red: 0.78, green: 0.84, blue: 0.88))
+                    .frame(width: 20, height: 4)
             }
-            .offset(y: -25)
+            .offset(y: 12)
             
-            // Eyes
-            HStack(spacing: 12) {
-                Circle()
-                    .fill(Color.black)
-                    .frame(width: 6, height: 6)
+            // Enhanced ears with inner ears
+            HStack(spacing: 30) {
+                ZStack {
+                    Ellipse()
+                        .fill(Color(red: 0.29, green: 0.37, blue: 0.47))
+                        .frame(width: 16, height: 22)
+                        .rotationEffect(.degrees(-15))
+                    Ellipse()
+                        .fill(Color(red: 0.47, green: 0.55, blue: 0.65))
+                        .frame(width: 10, height: 14)
+                        .rotationEffect(.degrees(-15))
+                }
                 
-                Circle()
-                    .fill(Color.black)
-                    .frame(width: 6, height: 6)
+                ZStack {
+                    Ellipse()
+                        .fill(Color(red: 0.29, green: 0.37, blue: 0.47))
+                        .frame(width: 16, height: 22)
+                        .rotationEffect(.degrees(15))
+                    Ellipse()
+                        .fill(Color(red: 0.47, green: 0.55, blue: 0.65))
+                        .frame(width: 10, height: 14)
+                        .rotationEffect(.degrees(15))
+                }
+            }
+            .offset(y: -28)
+            
+            // Enhanced eyes with highlights
+            HStack(spacing: 12) {
+                ZStack {
+                    Circle()
+                        .fill(Color.black)
+                        .frame(width: eyeBlink ? 8 : 8, height: eyeBlink ? 2 : 8)
+                    if !eyeBlink {
+                        Circle()
+                            .fill(Color.white)
+                            .frame(width: 3, height: 3)
+                            .offset(x: -1, y: -1)
+                    }
+                }
+                
+                ZStack {
+                    Circle()
+                        .fill(Color.black)
+                        .frame(width: eyeBlink ? 8 : 8, height: eyeBlink ? 2 : 8)
+                    if !eyeBlink {
+                        Circle()
+                            .fill(Color.white)
+                            .frame(width: 3, height: 3)
+                            .offset(x: -1, y: -1)
+                    }
+                }
             }
             .offset(y: -8)
+            .onAppear {
+                withAnimation(.easeInOut(duration: 3.0).repeatForever()) {
+                    eyeBlink.toggle()
+                }
+            }
             
-            // Nose
+            // Enhanced nose
             Ellipse()
-                .fill(Color.black)
-                .frame(width: 4, height: 3)
+                .fill(Color(red: 0.24, green: 0.24, blue: 0.24))
+                .frame(width: 5, height: 4)
                 .offset(y: 2)
+            
+            // Whiskers
+            Group {
+                // Left whiskers
+                Rectangle()
+                    .fill(Color(red: 0.31, green: 0.31, blue: 0.31))
+                    .frame(width: 12, height: 1)
+                    .offset(x: -18, y: 0)
+                Rectangle()
+                    .fill(Color(red: 0.31, green: 0.31, blue: 0.31))
+                    .frame(width: 12, height: 1)
+                    .offset(x: -18, y: 3)
+                
+                // Right whiskers
+                Rectangle()
+                    .fill(Color(red: 0.31, green: 0.31, blue: 0.31))
+                    .frame(width: 12, height: 1)
+                    .offset(x: 18, y: 0)
+                Rectangle()
+                    .fill(Color(red: 0.31, green: 0.31, blue: 0.31))
+                    .frame(width: 12, height: 1)
+                    .offset(x: 18, y: 3)
+            }
         }
-        .offset(x: -20, y: 5)
+        .offset(x: -18, y: 5)
     }
 }
 

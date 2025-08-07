@@ -183,31 +183,32 @@ class VocabularyManager: ObservableObject {
     /// - Returns: Array of vocabulary words appropriate for the session
     func words(forSessionType sessionType: LearningSessionType) -> [VocabularyWord] {
         switch sessionType {
-        case .colors:
-            return words(for: .colors)
-        case .numbers:
-            return words(for: .numbers)
-        case .animals:
-            return words(for: .animals)
-        case .bodyParts:
-            return words(for: .bodyParts)
-        case .food:
-            return words(for: .food)
-        case .mixed:
+        case .vocabulary:
+            // Return mixed vocabulary for general vocabulary practice
             return randomWords(count: 10)
+        case .pronunciation:
+            // Return words good for pronunciation practice
+            return randomWords(count: 8)
+        case .writing:
+            // Return simpler words for writing practice
+            return words(for: .colors) + words(for: .numbers)
+        case .listening:
+            // Return varied words for listening practice
+            return randomWords(count: 12)
+        case .games:
+            // Return fun words for games
+            return words(for: .animals) + words(for: .colors)
+        case .review:
+            // Return all words for review
+            return allWords
+        case .quiz:
+            // Return varied words for quizzing
+            return randomWords(count: 15)
+        case .freePlay:
+            // Return all available words for free exploration
+            return allWords
         }
     }
 }
 
-/// Types of learning sessions available in the app
-/// 
-/// These session types correspond to different vocabulary categories
-/// and learning activities.
-enum LearningSessionType {
-    case colors
-    case numbers
-    case animals
-    case bodyParts
-    case food
-    case mixed
-}
+

@@ -34,6 +34,9 @@ class AudioService: ObservableObject {
     /// Whether pronunciation audio is enabled
     @Published var pronunciationEnabled: Bool = true
     
+    /// Delegate for audio player completion callbacks
+    private var audioDelegate: AudioPlayerDelegate?
+    
     /// Private initializer for singleton pattern
     private init() {
         setupAudioSession()
@@ -85,7 +88,8 @@ class AudioService: ObservableObject {
         
         do {
             pronunciationPlayer = try AVAudioPlayer(contentsOf: audioURL)
-            pronunciationPlayer?.delegate = AudioPlayerDelegate(completion: completion)
+            audioDelegate = AudioPlayerDelegate(completion: completion)
+            pronunciationPlayer?.delegate = audioDelegate
             pronunciationPlayer?.volume = volume
             pronunciationPlayer?.play()
             isPlaying = true

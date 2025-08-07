@@ -11,7 +11,7 @@ struct ContentView: View {
             
             // Main content
             VStack(spacing: 0) {
-                // Header with floating elements and magical icon
+                // Header with floating elements
                 HeaderView()
                 
                 // Tab navigation
@@ -37,7 +37,7 @@ struct ContentView: View {
                         }
                         .tag(2)
                     
-                    ProgressView()
+                                            LearningProgressView()
                         .tabItem {
                             Image(systemName: "chart.line.uptrend.xyaxis")
                             Text("Progress")
@@ -139,25 +139,16 @@ struct HeaderView: View {
     
     var body: some View {
         VStack(spacing: 15) {
-            // Magical app icon and title
-            HStack(spacing: 15) {
-                // Magical app icon (smaller version)
-                MagicalAppIcon()
-                    .scaleEffect(0.3)
-                    .frame(width: 36, height: 36)
-                    .clipped()
+            // App title with magical glow
+            VStack(spacing: 8) {
+                Text("小恐龙学中文")
+                    .font(.system(size: 32, weight: .bold, design: .rounded))
+                    .foregroundColor(Color(red: 0.2, green: 0.4, blue: 0.3))
+                    .shadow(color: Color(red: 0.2, green: 0.4, blue: 0.3).opacity(0.3), radius: isGlowing ? 8 : 4)
                 
-                // App title with magical glow
-                VStack(spacing: 8) {
-                    Text("小恐龙学中文")
-                        .font(.system(size: 28, weight: .bold, design: .rounded))
-                        .foregroundColor(Color(red: 0.2, green: 0.4, blue: 0.3))
-                        .shadow(color: Color(red: 0.2, green: 0.4, blue: 0.3).opacity(0.3), radius: isGlowing ? 8 : 4)
-                    
-                    Text("Silas Learns Chinese")
-                        .font(.system(size: 16, weight: .medium, design: .rounded))
-                        .foregroundColor(Color(red: 0.3, green: 0.5, blue: 0.4))
-                }
+                Text("Silas Learns Chinese")
+                    .font(.system(size: 18, weight: .medium, design: .rounded))
+                    .foregroundColor(Color(red: 0.3, green: 0.5, blue: 0.4))
             }
             .padding(.top, 20)
             
@@ -459,20 +450,6 @@ struct ProgressItem: View {
 }
 
 // MARK: - Placeholder Views for Phase 2
-struct LearningView: View {
-    var body: some View {
-        VStack {
-            Text("Learning Center")
-                .font(.largeTitle)
-                .padding()
-            
-            Text("Phase 2: Enhanced Learning Features")
-                .font(.headline)
-                .foregroundColor(.secondary)
-        }
-    }
-}
-
 struct ActivitiesView: View {
     var body: some View {
         VStack {
@@ -487,19 +464,7 @@ struct ActivitiesView: View {
     }
 }
 
-struct ProgressView: View {
-    var body: some View {
-        VStack {
-            Text("Progress Dashboard")
-                .font(.largeTitle)
-                .padding()
-            
-            Text("Phase 2: Detailed Analytics & Insights")
-                .font(.headline)
-                .foregroundColor(.secondary)
-        }
-    }
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

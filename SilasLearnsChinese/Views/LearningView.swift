@@ -546,15 +546,6 @@ struct VoiceRecognitionView: View {
     }
 }
 
-// MARK: - Vocabulary Word Model
-struct VocabularyWord {
-    let chinese: String
-    let pinyin: String
-    let english: String
-    let category: String
-    let audioURL: String?
-}
-
 struct LearningView_Previews: PreviewProvider {
     static var previews: some View {
         LearningView()
